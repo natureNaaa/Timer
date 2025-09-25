@@ -1,0 +1,6 @@
+index.html        → 模式选择页面（选择 Stopwatch 或 Countdown）
+stopwatch.html    → 普通计时器页面
+countdown.html    → 倒计时页面
+style.css
+script-stopwatch.js
+script-countdown.js
