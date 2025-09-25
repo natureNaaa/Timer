@@ -1,3 +1,34 @@
+// script.js (在顶部或其他位置添加)
+
+// 函数：检查并请求通知权限
+function requestNotificationPermission() {
+    // 检查浏览器是否支持通知
+    if (!("Notification" in window)) {
+        console.error("This browser does not support desktop notification.");
+        return;
+    }
+
+    // 检查是否已经获得授权
+    if (Notification.permission === "granted") {
+        console.log("Notification permission already granted.");
+        return;
+    }
+
+    // 请求用户授权
+    if (Notification.permission !== "denied") {
+        Notification.requestPermission().then(permission => {
+            if (permission === "granted") {
+                console.log("Notification permission granted!");
+            } else {
+                console.log("Notification permission denied.");
+            }
+        });
+    }
+}
+
+// 在页面加载后立即尝试请求权限（或在用户点击“开始倒计时”时请求）
+requestNotificationPermission();
+
 let startTime;
 let timerInterval;
 
