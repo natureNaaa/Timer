@@ -52,3 +52,33 @@ h1 {
     font-size: 1.1em;
     color: #555;
 }
+.countdown-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* 元素之间的间距 */
+}
+
+#countdown-minutes {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+#countdown-start-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db; /* 倒计时按钮使用蓝色 */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#countdown-start-btn:hover {
+    background-color: #2980b9;
+}
