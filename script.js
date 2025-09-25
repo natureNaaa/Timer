@@ -121,7 +121,7 @@ function startCountdown() {
             if (Notification.permission === "granted") {
                 new Notification("TIME'S UP!", {
                     body: "The countdown timer has finished!",
-                    icon: "https://你的网站/path/to/icon.png" // 可选：指定一个图标 URL
+                    icon: "https://naturenaaa.github.io/Timer//path/to/icon.png" // 可选：指定一个图标 URL
                 });
             }
             // 🌟🌟🌟 结束新增代码 🌟🌟🌟
